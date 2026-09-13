@@ -1,0 +1,17 @@
+pluginManagement {
+    repositories {
+        google()            // 必须：告诉 Gradle 去哪里下载 com.android.application 插件
+        mavenCentral()      // 公共依赖库
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "dummy"
